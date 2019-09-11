@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { BookingService } from '../booking.service';
 
 @Component({
@@ -8,6 +9,9 @@ import { BookingService } from '../booking.service';
 })
 export class ConfirmBookingComponent {
 
-  constructor(public bookingSrv: BookingService) { }
+  constructor(private router: Router,public bookingSrv: BookingService) { }
+  goHome() {
+    this.router.navigate(['booking/movielist']);
+  }
 
 }

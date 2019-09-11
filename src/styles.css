@@ -33,6 +33,7 @@ a:hover , a:active{
 }
 .dropdown-item{
     color: #3a3b45;
+    cursor: pointer;
 }
 .dropdown .dropdown-menu {
     font-size: .85rem;
@@ -209,10 +210,11 @@ form.user .btn-user , .movie-booking-slot-seletion .btn-user , .btn-theme {
   
   .sidebar .nav-link {
     
-    color: rgba(255,255,255,.8);
+    color: rgba(255,255,255,.8) !Important;
     font-size: 0.85rem;
     padding: 20px 1rem;
-    border-bottom: 1px solid  rgba(255,255,255,.8);;
+    border-bottom: 1px solid  rgba(255,255,255,.8);
+    cursor: pointer;
    
   }
   .sidebar .nav-link i
