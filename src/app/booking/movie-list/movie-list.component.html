@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<div class=" container">
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Movies This Week</h1>
+  </div>
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let movie of moviesList">
+          <div class="card card-radius mb-4 shadow" (click)="selectMovie(movie)">
+            <img src="{{movie.image}}" width="100%" />
+            <div class="card-overlay">
+                <div class="overlay-opt">
+                  <span>
+                    Book Now
+                  </span>
+                </div>
+            </div>
+            <div class="card-body">
+              <h3>{{movie.name}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

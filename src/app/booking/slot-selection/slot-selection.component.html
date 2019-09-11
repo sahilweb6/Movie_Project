@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<div class=" container">
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">{{bookingSrv.bookMovieObj.movie.name}}</h1>
+  </div>
+  <div class="movie-booking-slot-seletion">
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h3 class="m-0 font-weight-bold text-primary-theme">Select Time Slot</h3>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered"  width="100%" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Movie Theatre</th>
+                <th>Slot 1</th>
+                <th>Slot 2</th>
+                <th>Slot 3</th>
+                <th>Slot 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let th of theaterList">
+                <td>{{th.name}} {{th.location}}</td>
+                <td (click)="slot(th, th.slot1, $event, 'active')"><span>{{th.slot1}}</span></td>
+                <td (click)="slot(th, th.slot2, $event, 'active')"><span>{{th.slot2}}</span></td>
+                <td (click)="slot(th, th.slot3, $event, 'active')"><span>{{th.slot3}}</span></td>
+                <td (click)="slot(th, th.slot4, $event, 'active')"><span>{{th.slot4}}</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-user" (click)="slotSelected()">Next</button>
+  </div>
+</div>

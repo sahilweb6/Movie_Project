@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "tid": [ 1, 2 ],
+    "name": "Surkhi Bindi",
+    "image": "https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/surkhi-bindi-et00102442-08-05-2019-12-55-15.jpg",
+    "description": "Rano, an ordinary girl from Punjab, always dreamed of marrying a prince charming hailing from Canada. But she soon realizes she doesn`t possess any quality to attract a proposal. She is not conventionally beautiful, neither is she academically brilliant nor does she have a rich father. All she has to offer is a talent that is frowned upon in Punjab. She is a make-up artist and hopes that this talent will somehow fulfill her dream. But is it enough?"
+  },
+  {
+    "id": 1,
+    "tid": [ 1, 2, 3 ],
+    "name": "Chhichhore",
+    "image": "https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/chhichhore-et00085935-09-10-2018-11-33-49.jpg",
+    "description": "Chhichhore takes you on an exuberant and hilarious journey through college life where you meet a bunch of interesting `losers`: Anni, Maya, Sexa, Derek, Mummy, Acid, and Bevda. They as a group go through a seamless transition from past to present and end up at a reunion they could never have thought of."
+  },
+  {
+    "id": 1,
+    "tid": [ 1, 2, 3 ],
+    "name": "Saaho",
+    "image": "https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/saaho-et00056624-28-04-2017-06-11-10.jpg",
+    "description": "Amidst a power struggle between higher authorities, unrelated episodes occur in parts of the world that are entwined in an unforeseen revelation of convoluted manipulations. Saaho challenges the perceptions of the audience as to who is the hunter and who is being hunted."
+  },
+  {
+    "id": 1,
+    "tid": [ 1, 2 ],
+    "name": "Mission Mangal",
+    "image": "https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/mission-mangal-et00089473-28-11-2018-05-17-55.jpg",
+    "description": "Inspired by true events that led up to ISRO`s Mars Orbiter Mission (Mangalyaan), the film tells the story of a group of scientists who overcame their professional and personal tribulations to mastermind the greatest accomplishment in Indian space history."
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "INOX",
+    "location": "sector 34 , opposite JW marriot , Chandigarh",
+    "slot1": "10:00 AM",
+    "slot2": "01:00 PM",
+    "slot3": "04:35 PM",
+    "slot4": "07:30 PM"
+  },
+  {
+    "id": 2,
+    "name": "IMAX 3D",
+    "location": "Sector 17 , Market ,Chandigarh",
+    "slot1": "10:40 AM",
+    "slot2": "02:30 PM",
+    "slot3": "05:35 PM",
+    "slot4": "08:15 PM"
+  },
+  {
+    "id": 3,
+    "name": "Fun Cinemas",
+    "location": "sector 26 udyog vihar chandigarh",
+    "slot1": "11:40 AM",
+    "slot2": "03:00 PM",
+    "slot3": "06:15 PM",
+    "slot4": "06:30 PM"
+  }
+]

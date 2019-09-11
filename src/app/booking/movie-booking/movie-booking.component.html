@@ -1,0 +1,58 @@
+<app-header></app-header>
+
+<div class=" container">
+  <div class="card shadow">
+    <div class="row">
+      <aside class="col-sm-5 border-right">
+        <article class="gallery-wrap">
+          <div class="img-small-wrap">
+            <div class="item-gallery"> <img src="{{bookingSrv.bookMovieObj.movie.image}}" width="100%"> </div>
+          </div> <!-- slider-nav.// -->
+        </article> <!-- gallery-wrap .end// -->
+      </aside>
+      <aside class="col-sm-7">
+        <article class="card-body p-5">
+          <h3 class="title mb-3">{{bookingSrv.bookMovieObj.movie.name}}</h3>
+
+          <dl class="item-property">
+            <dt>Description</dt>
+            <dd>
+              <p>{{bookingSrv.bookMovieObj.movie.description}} </p>
+            </dd>
+          </dl>
+          <dl class="param param-feature">
+            <dt>Theater</dt>
+            <dd>{{bookingSrv.bookMovieObj.theater_name}} - {{bookingSrv.bookMovieObj.location}}</dd>
+          </dl> <!-- item-property-hor .// -->
+          <dl class="param param-feature">
+            <dt>Time</dt>
+            <dd>{{bookingSrv.bookMovieObj.slot}}</dd>
+          </dl> <!-- item-property-hor .// -->
+          <hr>
+          <div class="row">
+            <div class="col-sm-12">
+              <dl class="param param-inline">
+                <dt>Select Number of seats: </dt>
+                <dd>
+                  <select class="form-control form-control-sm" style="width:70px" (change)="changingValue($event)">
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                    <option value="8"> 8 </option>
+                    <option value="9"> 9 </option>
+                  </select>
+                </dd>
+              </dl> <!-- item-property .// -->
+            </div> <!-- col.// -->
+          </div> <!-- row.// -->
+          <hr>
+          <button class="btn btn-lg btn-primary text-uppercase btn-theme" (click)="bookTicket()"> Confirm Booking </button>
+        </article> <!-- card-body.// -->
+      </aside> <!-- col.// -->
+    </div> <!-- row.// -->
+  </div> <!-- card.// -->
+</div>

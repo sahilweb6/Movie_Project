@@ -1,0 +1,289 @@
+html, body{
+    height: 100%;
+    
+}
+body{
+    margin: 0;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+    background-color: #f8f9fc;
+}
+a:hover , a:active{
+    text-decoration: none;
+}
+.text-primary-theme{
+    color: #4e73df
+}
+.mb-4{
+    margin-bottom: 1.5rem;
+}
+.mr-2, .mx-2 {
+    margin-right: .5rem!important;
+}
+.sidebar .nav-item .nav-link .img-profile, .topbar .nav-item .nav-link .img-profile {
+    height: 2rem;
+    width: 2rem;
+}
+.text-gray-400 {
+    color: #d1d3e2!important;
+}
+.dropdown-item{
+    color: #3a3b45;
+}
+.dropdown .dropdown-menu {
+    font-size: .85rem;
+}
+.login-page{
+    background-color: #4e73df;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#4e73df),to(#224abe));
+    background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+    background-size: cover;
+    height: 100%;
+}
+h1.logo-Big{
+    font-weight: 400;
+}
+h1.logo-Big i{
+    padding-right: 10px;
+    color:#4e73df;
+}
+form.user .form-control-user {
+    font-size: .8rem;
+    border-radius: 10rem;
+    padding: 20px 15px;
+}
+form.user .btn-user , .movie-booking-slot-seletion .btn-user , .btn-theme {
+    font-size: .8rem;
+    border-radius: 10rem;
+    padding: .75rem 1rem;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn-primary , .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2e59d9;
+    border-color: #2653d4;
+}
+.shadow-lg {
+    -webkit-box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+.shadow {
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+.topbar {
+    height: 4.375rem;
+    position: relative;
+    z-index: 999;
+}
+.login-page .card{
+    padding: 3rem;
+    margin-top:3rem;
+    margin-bottom: 3rem;
+}
+.login-page h1{
+    margin-bottom: 20px;
+}
+.card-radius {
+    border-radius: 0.8rem;
+}
+.card-radius  img{
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+.card-radius h3{
+    margin: 5px 0;
+
+}
+.card{
+    position: relative;
+}
+.card-overlay{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,105,217,0.6);
+  border-radius: 0.8rem;
+    
+}
+.card-overlay .overlay-opt {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.card-overlay .overlay-opt span {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border:1px solid #fff;
+    padding: 10px 25px;
+  }
+
+.card:hover .card-overlay {
+    opacity: 1;
+  }
+  .movie-booking-slot-seletion span{
+      border:2px solid #4e73df;
+      border-radius:20px;
+      padding: 2px 12px;
+      color: #4e73df; 
+      font-size: 12px;
+      font-weight: 700; 
+      cursor: pointer;
+  }
+  .movie-booking-slot-seletion td span.active , .movie-booking-slot-seletion  td span:hover{
+      background: #4e73df;
+      color: #fff;
+  }
+  .movie-booking-slot-seletion a.disabled{
+    background: #ccc;
+    color: #fff;
+    border-color: #ccc;
+}
+.movie-booking-slot-seletion .btn-user{
+    text-align: center;
+    font-weight: 700;
+    min-width: 150px;
+}
+.card-success-msg i.fa-circle{
+    color: #1cc88a;
+}
+.card-success-msg h2{
+    margin: 20px 0;
+}
+
+/*
+ * Sidebar
+ */
+
+ .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 68px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+  
+  .sidebar .nav-link {
+    
+    color: rgba(255,255,255,.8);
+    font-size: 0.85rem;
+    padding: 20px 1rem;
+    border-bottom: 1px solid  rgba(255,255,255,.8);;
+   
+  }
+  .sidebar .nav-link i
+  {
+      margin-right: 4px;
+      font-size: 18px;
+   color: rgba(255,255,255,.5)
+  }
+  
+  
+
+  
+  .sidebar .nav-link.active , .sidebar .nav-link:hover {
+    color: #ffffff;
+    font-weight: 700;
+  }
+  
+  .sidebar .nav-link:hover i,
+  .sidebar .nav-link.active i {
+    color: inherit;
+  }
+  
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+  .bg-gradient-primary {
+    background-color: #4e73df;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#4e73df),to(#224abe));
+    background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+    background-size: cover;
+}  
+
+.text-gray-800 {
+    color: #5a5c69!important;
+}
+.btn-info {
+    color: #fff;
+    background-color: #36b9cc;
+    border-color: #36b9cc;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #e74a3b;
+    border-color: #e74a3b;
+}
+.btn-circle {
+    border-radius: 100%;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.admin-content h1{
+    margin: 20px 0 30px;
+}
+.modal-footer .btn-theme{
+    font-size: inherit;
+    border-radius: 10rem ;
+    padding: 3px 20px;
+
+}
+.invalid-tooltip{
+    background: transparent;
+    color:red;
+}

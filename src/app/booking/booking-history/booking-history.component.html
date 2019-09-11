@@ -1,0 +1,36 @@
+<app-header></app-header>
+
+<div class=" container">
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Booking History</h1>
+  </div>
+  <div class="movie-booking-slot-seletion">
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h3 class="m-0 font-weight-bold text-primary-theme">Booking history</h3>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+              <tr>
+                <th>S.no</th>
+                <th>Movie Name</th>
+                <th>Tickets </th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let bh of bookingHistoryList">
+                <td>{{bh.id}}</td>
+                <td>{{bh.name}}</td>
+                <td>{{bh.tickets}}</td>
+                <td>{{bh.time | date:'MMM d, y, h:mm a'}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
